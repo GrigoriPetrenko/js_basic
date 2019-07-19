@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learn JS Variebles</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        /*переменные*/
+        var x = 5;
+        var y = 4;
+       
+        var result;
+        
+        result = x + y;
+        document.write(result);
+        result += x;
+        document.write("</br>"+result);
+        /*сравнения*/
+        document.write("</br>");
+        var bool;
+        bool = x<y;
+        document.write("</br>"+bool);
+        document.write("</br>");
+
+        /*условные операторы if*/
+        if (x > y){
+            document.write("x > y");
+        }
+        else if (x ==y){
+            document.write("x = y");
+        }
+        else{
+            document.write("x < y");
+        }
+        /*условные операторы switch*/
+        document.write("</br>");
+        var a = 8;
+        var b;
+        switch(a) {
+            case 1:document.write("a = 1");break;
+            case 2:document.write("a = 2");break;
+            case 3:document.write("a = 3");break;
+            case 4:document.write("a = 4");break;
+            default: document.write("a > 4");
+        }
+        document.write("</br>");
+        /*условные оператор сравнения*/
+        var k = 13;
+        var f = 16;
+        f > k ? document.write("yes") : document.write("no");
+        document.write("</br>");
+        /*СРАВНЕНИЕ НЕСКОЛЬКИХ УСЛОВИЙ*/
+        var g =5;
+        var q = 7;
+        var z;
+        z = false;
+        if (q > g || z == true){
+            document.write("true");
+        }
+        
+        </script>
+
+    </body>
+
+</html>

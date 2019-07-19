@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learn JS Arrays </title>
+    </head>
+    <body>
+        <h1>Arrays</h1>
+        <script  type="text/javascript">
+            var arr = new Array("STR", 15, false, 7);
+            document.write(arr[0] + "</br>" + arr[5]);
+            /*Сколько в массиве элементов*/
+            document.write("</br>" + arr.length);
+
+            for(var i = 0; i<arr.length; i++) {
+                document.write("</br>" + arr[i]);
+            }
+
+            arr = new Array();
+                for(i = 0; i < 10; i++) {
+                    arr[i] = i * 3;
+                    document.write("</br>" + arr[i]);
+            }
+            
+            /*Среднее арефметическое и сумма всех чисел в массиве*/
+            var summ = 0;
+            
+            for(i = 0; i < arr.length; i++){
+                summ += arr[i];
+                document.write("</br>" + "Сумма всех чисел в массиве =" + summ);
+                document.write("</br>" + "Среднее арефметическое =" + (summ/arr.length));
+            }
+                document.write("</br>" + "</br>" + "Сумма всех чисел в массиве =" + summ);
+                document.write("</br>" + "Среднее арефметическое =" + (summ/arr.length));
+
+        </script>
+
+    </body>
+
+</html>
