@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learn JS Variebles</title>
+    </head>
+    <body>
+    <div  style ="float: left" border-style="solid: 5px">
+        <h1>Not using as name of variables:</h1>
+	<p>
+		abstract, boolean, break, byte, case, catch, char, class, const, continue, debugger, default, delete, do, </br>
+		double, else, enum, export, extends, false, final, finally, float, for, function, goto, if, implements, </br>
+		import, in, instanceof, int, inteface, long, native, new, null, package, private, protected, public, return, </br>
+		short, static, super, switch, synchronized, this, throw, throws, transient, true, try, typeof, var, volatile, </br>
+		void, while, with
+    </p>
+        <h1>Types of variables:</h1>
+	<p>
+		String: представляет строку</br>
+		Number: представляет числовое значение</br>
+		Boolean: представляет логическое значение true или false</br>
+		undefined: указывает, что значение не установлено</br>
+		null: указывает на неопределенное значение</br>
+	</p>
+    </div>
+    <div  style ="float: right">
+        <script type="text/javascript">
+        /*переменные*/
+        var $firstNumber=5, $secondNumber=4, $result;
+		
+		$firstNumber=8;
+        
+        $result = $firstNumber + $secondNumber;
+		document.write("</br>"+"Sum is: "+$result);
+		
+        $result += $firstNumber;
+        document.write("</br>"+"First number twice: "+$result);
+		
+        /*сравнения*/
+		
+        document.write("</br>");
+        var $bool;
+        /*$bool = $firstNumber<$secondNumber;
+        document.write("</br>"+$bool);
+        document.write("</br>");
+
+        /*условные операторы if*/
+        if ($firstNumber > $secondNumber){
+            document.write("$firstNumber > $secondNumber");
+        }
+        else if ($firstNumber==$secondNumber){
+            document.write("$firstNumber = $secondNumber");
+        }
+        else{
+            document.write("$firstNumber < $secondNumber");
+        }
+        /*условные операторы switch*/
+        document.write("</br>");
+        var a = 8;
+        var b;
+        switch(a) {
+            case 1:document.write("a = 1");break;
+            case 2:document.write("a = 2");break;
+            case 3:document.write("a = 3");break;
+            case 4:document.write("a = 4");break;
+            default: document.write("a > 4");
+        }
+        document.write("</br>");
+        /*условные оператор сравнения*/
+        var k = 13;
+        var f = 16;
+        f > k ? document.write("yes") : document.write("no");
+        document.write("</br>");
+        /*СРАВНЕНИЕ НЕСКОЛЬКИХ УСЛОВИЙ*/
+        var g =5;
+        var q = 7;
+        var z;
+        z = false;
+        if (q > g || z == true){
+            document.write("true");
+        }
+        
+        </script>
+    </div>
+    <div>
+        <script>
+            var strSum = prompt("Введите сумму вклада", 1000);
+            var strPercent = prompt("Введите процентную ставку", 10);
+            var sum = parseInt(strSum);
+            var procent = parseInt(strPercent);
+            sum = sum + sum * procent / 100;
+            document.write("После начисления процентов сумма вклада составит: " + sum);
+        </script>
+    </div>
+
+    </body>
+
+</html>
