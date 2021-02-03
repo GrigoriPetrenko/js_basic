@@ -17,7 +17,7 @@
             }
 
             arr = new Array();
-                for(i = 0; i < 10; i++) {
+                for(i = 0; i < 3; i++) {
                     arr[i] = i * 3;
                     document.write("</br>" + arr[i]);
             }
@@ -27,11 +27,11 @@
             
             for(i = 0; i < arr.length; i++){
                 summ += arr[i];
-                document.write("</br>" + "Сумма всех чисел в массиве =" + summ);
-                document.write("</br>" + "Среднее арефметическое =" + (summ/arr.length));
+                document.write("</br>" + "Сумма всех чисел в массиве = " + summ);
+                document.write("</br>" + "Среднее арефметическое = " + (summ/arr.length));
             }
-                document.write("</br>" + "</br>" + "Сумма всех чисел в массиве =" + summ);
-                document.write("</br>" + "Среднее арефметическое =" + (summ/arr.length));
+                document.write("</br>" + "</br>" + "Сумма всех чисел в массиве = " + summ);
+                document.write("</br>" + "Среднее арефметическое = " + (summ/arr.length));
 
 
             /*Двумерный массив*/
@@ -41,13 +41,18 @@
                 ["Alice", 21, false]
             ];
             people[0][1] = 56; // присваиваем отдельное значение
-            document.write(people[0][1]); // 56
+            document.writeln( "</br>" + people[0][1]); // 56
 
             people[1] = ["Bob", 29, false]; // присваиваем массив
-            document.write(people[1][0]); // Bob                                                              
+            document.writeln( "</br>" + people[1][0]); // Bob        
+
+            var ourArray = ["Stimpson", "J", "cat"];
+            ourArray.shift(); // ourArray now equals ["J", "cat"]
+            ourArray.unshift("Happy");  
+            document.writeln( "</br>" + ourArray[0]);                                                    
 
         </script>
 
     </body>
 
-</html>
+</html> 
