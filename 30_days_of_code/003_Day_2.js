@@ -1,6 +1,6 @@
-Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), 
+/*Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), 
 and tax percent (the percentage of the meal price being added as tax) for a meal, 
-find and print the meal's total cost. Round the result to the nearest integer.
+find and print the meal's total cost. Round the result to the nearest integer.*/
 
 function solve(meal_cost, tip_percent, tax_percent) {
     const totalCost = (meal_cost*tip_percent)/100 + (meal_cost*tax_percent)/100 + meal_cost;
