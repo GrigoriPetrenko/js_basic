@@ -1,5 +1,5 @@
-/*no_day_13_solution_in_js
-day_14*/
+/*no_day_14_solution_in_js
+day_15*/
           //complete this method
           this.insert=function(head,data){
             let node = new Node(data)
