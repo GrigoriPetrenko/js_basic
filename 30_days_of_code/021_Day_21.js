@@ -1,0 +1,1 @@
+//unfortunately no test task in day 21 on js
