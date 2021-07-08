@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Factorial Using Recursion</title>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            // program to find the factorial of a number
+            function factorial(num) {
+
+            // if number is 0
+            if (num == 0) {
+                return 1;
+            }
+
+            // if number is positive
+            else {
+                return num * factorial(num - 1);
+            }
+            }
+
+            // take input from the user
+            const num = prompt('Enter a positive number: ');
+
+            // calling factorial() if num is positive
+            if (num >= 0) {
+                const result = factorial(num);
+                alert(`The factorial of ${num} is ${result}`);
+            }
+            else {
+                alert('Enter a positive number.');
+            }
+
+        </script>
+    </body>
+
+</html>
